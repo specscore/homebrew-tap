@@ -23,7 +23,7 @@ brew install specscore
 
 ## How updates work
 
-Formulae are published automatically by [GoReleaser](https://goreleaser.com/) on each tagged release of the upstream CLI. Manual edits to `Formula/*.rb` will be overwritten on the next release.
+Formulae are published automatically by [GoReleaser](https://goreleaser.com/) on each tagged release of the upstream CLI. Manual edits to `*.rb` (root-level, e.g. `specscore.rb`) will be overwritten on the next release.
 
 ## License
 
