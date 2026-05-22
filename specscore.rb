@@ -5,21 +5,21 @@
 class Specscore < Formula
   desc "SpecScore CLI — lint, validate, and navigate Markdown specifications."
   homepage "https://specscore.md"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/specscore/specscore-cli/releases/download/v0.2.0/specscore_0.2.0_darwin_amd64.tar.gz"
-      sha256 "c7ee7ec9c95921fc382ba8d35a067e27b1fc611374f505b349f55552ce27da99"
+      url "https://github.com/specscore/specscore-cli/releases/download/v0.3.0/specscore_0.3.0_darwin_amd64.tar.gz"
+      sha256 "81ad93b61aca49b5d113e7480e1110495224fc0f66c9b576599d1bf4b47a8355"
 
       define_method(:install) do
         bin.install "specscore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/specscore/specscore-cli/releases/download/v0.2.0/specscore_0.2.0_darwin_arm64.tar.gz"
-      sha256 "a0da8fa7729f41d485b34c476f9b4b35d73e91e0224876be43749cb2b052ff50"
+      url "https://github.com/specscore/specscore-cli/releases/download/v0.3.0/specscore_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d2b169bc0f6f4c253c9610b174951237542585756f354aac486b0127abdc56bb"
 
       define_method(:install) do
         bin.install "specscore"
@@ -29,15 +29,15 @@ class Specscore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/specscore/specscore-cli/releases/download/v0.2.0/specscore_0.2.0_linux_amd64.tar.gz"
-      sha256 "a98272e5385d4945b821f5b0b6d354cb0ea646a66fd122f7bc5256ebb5b39cb2"
+      url "https://github.com/specscore/specscore-cli/releases/download/v0.3.0/specscore_0.3.0_linux_amd64.tar.gz"
+      sha256 "b2e2a3cb358c84722685a98d7e61847fe5f57b4cf1ba90dc0cf380b98f4884c4"
       define_method(:install) do
         bin.install "specscore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/specscore/specscore-cli/releases/download/v0.2.0/specscore_0.2.0_linux_arm64.tar.gz"
-      sha256 "598f8035c2fd5b9f63050e9c65012becbbb51d14465eb0355c2e3e848b41ccb3"
+      url "https://github.com/specscore/specscore-cli/releases/download/v0.3.0/specscore_0.3.0_linux_arm64.tar.gz"
+      sha256 "8718b8a52a97d75fa3f96bd102fb0c5baa6b97a9e0b819fc23f64173cb2e2bf3"
       define_method(:install) do
         bin.install "specscore"
       end
